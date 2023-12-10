@@ -23,6 +23,13 @@ public class DashboardFormController {
     }
 
     public void itemButtonOnAction(ActionEvent actionEvent) {
-
+        try {
+            JasperDesign design = JRXmlLoader.load("src/main/resources/report/Item_Report.jrxml");
+            JasperReport jasperReport = JasperCompileManager.compileReport(design);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, DBConnection.getInstance().getConnection());
+            JasperViewer.viewReport(jasperPrint,false);
+        } catch (JRException | ClassNotFoundException | SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

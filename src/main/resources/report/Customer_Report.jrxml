@@ -41,34 +41,63 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="7" splitType="Stretch"/>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="120" height="30" uuid="aa57977c-3102-448c-831e-69e1fb3d1955"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="7" width="130" height="30" uuid="d3280380-b8e2-452e-bd21-502328d2be59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="7" width="130" height="30" uuid="964bbc32-fd4a-4d4e-9c2e-0072789e6012"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="7" width="160" height="30" uuid="41c46335-ba06-4cc0-a26f-43c26c400b8b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="58" splitType="Stretch">
+		<band height="28" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="5" width="120" height="30" uuid="87d9c822-3285-40e3-9b33-7ff7123e48a9"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="0" y="6" width="120" height="14" uuid="87d9c822-3285-40e3-9b33-7ff7123e48a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="rtf">
 					<font size="15"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="5" width="160" height="30" uuid="d0c1f079-5800-46fe-abd6-22a5ecfea596"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="120" y="6" width="160" height="14" uuid="d0c1f079-5800-46fe-abd6-22a5ecfea596"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="rtf">
 					<font size="15"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="280" y="5" width="130" height="30" uuid="8b1c2abf-0456-44cb-8884-81adf4b331a2"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="280" y="6" width="130" height="14" uuid="8b1c2abf-0456-44cb-8884-81adf4b331a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="rtf">
 					<font size="15"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="410" y="5" width="130" height="30" uuid="6bd89de8-b44d-430a-b456-284f343fbb2a"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
+				<reportElement x="410" y="6" width="130" height="14" uuid="6bd89de8-b44d-430a-b456-284f343fbb2a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="rtf">
 					<font size="15"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
@@ -114,6 +143,14 @@
 		<band height="10" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
-		<band height="8" splitType="Stretch"/>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="4" width="100" height="30" uuid="d1c14161-824a-41cd-bddd-c94075bc897c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[End Report...!]]></text>
+			</staticText>
+		</band>
 	</summary>
 </jasperReport>
